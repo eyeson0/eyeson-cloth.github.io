@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collections — EYESON</title>
+  <meta name="description" content="Collections and product listing" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/collections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="preload">
+  <div id="pageLoader" class="loader" aria-hidden="true"><div class="loader-inner"><div class="brand-mark">E</div><div class="loading-line"></div></div></div>
+  <div id="cursor" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <nav class="nav-left"><ul><li><a href="index.html">Home</a></li><li><a href="new.html">New</a></li><li class="has-dropdown">Upper Wear</li><li class="has-dropdown">Lower Wear</li></ul></nav>
+    <div class="logo-wrap"><a href="index.html"><img src="images/eyeson-logo.webp" alt="EYESON" class="logo"></a></div>
+    <nav class="nav-right"><ul><li class="has-dropdown">EYESON Special</li><li><a href="collections.html">Collections</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </header>
+
+  <main id="collectionsMain" class="section">
+    <div class="section-header">
+      <h2>Collections</h2>
+      <div class="category-filters">
+        <button class="cat-btn active" data-cat="all">All</button>
+        <button class="cat-btn" data-cat="upper">Upper Wear</button>
+        <button class="cat-btn" data-cat="lower">Lower Wear</button>
+        <button class="cat-btn" data-cat="special">EYESON Special</button>
+      </div>
+    </div>
+
+    <div id="featuredGrid" class="products-grid">
+      <!-- Duplicate these product cards to expand the catalog -->
+      <article class="product-card" data-category="upper">
+        <figure class="media"><button class="wish toggle-wish">♡</button><img src="images/product-oversized-tee.webp" alt="Premium Oversized Tee" loading="lazy"></figure>
+        <div class="info"><h3 class="product-name">Premium Oversized Tee</h3><div class="price">NPR 4,200</div><div class="actions"><button class="btn small quick-view">Quick View</button><button class="btn small primary add-cart">Add to Cart</button></div></div>
+      </article>
+
+      <article class="product-card" data-category="upper">
+        <figure class="media"><button class="wish toggle-wish">♡</button><img src="images/product-alttee.webp" alt="Alt Tee" loading="lazy"></figure>
+        <div class="info"><h3 class="product-name">Alt Tee — Black</h3><div class="price">NPR 3,200</div><div class="actions"><button class="btn small quick-view">Quick View</button><button class="btn small primary add-cart">Add to Cart</button></div></div>
+      </article>
+
+      <article class="product-card" data-category="lower">
+        <figure class="media"><button class="wish toggle-wish">♡</button><img src="images/product-jogger.webp" alt="Everyday Jogger" loading="lazy"></figure>
+        <div class="info"><h3 class="product-name">Everyday Jogger</h3><div class="price">NPR 5,800</div><div class="actions"><button class="btn small quick-view">Quick View</button><button class="btn small primary add-cart">Add to Cart</button></div></div>
+      </article>
+
+      <!-- Add more product-card items -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner"><div class="footer-col"><div class="brand-compact">EYESON</div><p class="muted">Luxury streetwear</p></div><div class="footer-col"><h4>Follow</h4><ul class="socials"><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div><div class="footer-col"><h4>Support</h4><ul><li>Delivery All Over Nepal</li><li>COD Available</li></ul></div><div class="footer-col"><h4>Newsletter</h4><form onsubmit="event.preventDefault(); alert('Subscribed (demo)');"><input type="email" placeholder="Your email" required><button class="btn primary">Join</button></form></div></div>
+    <div class="copyright">© 2026 EYESON. All Rights Reserved.</div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+</body>
+</html>

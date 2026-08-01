@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EYESON — Home</title>
+  <meta name="description" content="EYESON — Limitless luxury streetwear." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="preload">
+
+  <!-- Loader -->
+  <div id="pageLoader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="brand-mark">E</div>
+      <div class="loading-line"></div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div id="cursor" aria-hidden="true"></div>
+
+  <!-- Header (centered logo) -->
+  <header class="site-header" role="banner">
+    <nav class="nav-left" aria-label="Primary left navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new.html">New Arrivals</a></li>
+        <li class="has-dropdown">Upper Wear
+          <div class="dropdown">
+            <ul>
+              <li><a href="collections.html?cat=tshirts">T-Shirts</a></li>
+              <li><a href="collections.html?cat=oversized">Oversized T-Shirts</a></li>
+              <li><a href="collections.html?cat=shirts">Shirts</a></li>
+              <li><a href="collections.html?cat=hoodies">Hoodies</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="has-dropdown">Lower Wear
+          <div class="dropdown">
+            <ul>
+              <li><a href="collections.html?cat=joggers">Joggers</a></li>
+              <li><a href="collections.html?cat=jeans">Jeans</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap" role="img" aria-label="EYESON logo">
+      <!-- Replace with your logo (Image 1) -->
+      <a href="index.html"><img src="images/eyeson-logo.webp" alt="EYESON" class="logo" width="140" height="40"></a>
+    </div>
+
+    <nav class="nav-right" aria-label="Primary right navigation">
+      <ul>
+        <li class="has-dropdown">EYESON Special
+          <div class="dropdown">
+            <ul>
+              <li><a href="collections.html?cat=limited">Limited Edition</a></li>
+              <li><a href="collections.html?cat=signature">Signature</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="bg-slide" data-src="images/hero-oversized-black.webp"></div>
+        <div class="bg-slide" data-src="images/hero-street-night.webp"></div>
+        <div class="bg-slide" data-src="images/hero-closeup.webp"></div>
+        <div class="bg-slide" data-src="images/hero-fabric.webp"></div>
+        <div class="bg-slide" data-src="images/hero-studio.webp"></div>
+      </div>
+
+      <div class="hero-inner">
+        <h1 class="brand-title">EYESON</h1>
+        <p class="hero-sub">LIMITLESS FASHION<br><span class="muted">DESIGNED FOR THOSE WHO LEAD, NOT FOLLOW.</span></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="collections.html">Shop Now</a>
+          <a class="btn btn-outline" href="collections.html">Explore Collection</a>
+        </div>
+        <div class="scroll-indicator"><span></span></div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section" id="featured">
+      <div class="section-header">
+        <h2>Featured Collection</h2>
+        <div class="category-filters">
+          <a class="cat-btn" href="collections.html?cat=upper">Upper Wear</a>
+          <a class="cat-btn" href="collections.html?cat=lower">Lower Wear</a>
+          <a class="cat-btn" href="collections.html?cat=special">EYESON Special</a>
+        </div>
+      </div>
+
+      <div class="products-grid" id="featuredGrid">
+        <!-- Replace -> product data from your backend later -->
+        <article class="product-card" data-category="upper">
+          <figure class="media">
+            <button class="wish toggle-wish" aria-pressed="false">♡</button>
+            <img src="images/product-oversized-tee.webp" alt="Premium Oversized Tee" loading="lazy">
+          </figure>
+          <div class="info">
+            <h3 class="product-name">Premium Oversized Tee</h3>
+            <div class="price">NPR 4,200</div>
+            <div class="actions">
+              <button class="btn small quick-view">Quick View</button>
+              <button class="btn small primary add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="lower">
+          <figure class="media">
+            <button class="wish toggle-wish" aria-pressed="false">♡</button>
+            <img src="images/product-jogger.webp" alt="Everyday Jogger" loading="lazy">
+          </figure>
+          <div class="info">
+            <h3 class="product-name">Everyday Jogger</h3>
+            <div class="price">NPR 5,800</div>
+            <div class="actions">
+              <button class="btn small quick-view">Quick View</button>
+              <button class="btn small primary add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="special">
+          <figure class="media">
+            <button class="wish toggle-wish" aria-pressed="false">♡</button>
+            <img src="images/product-signature-jacket.webp" alt="Signature Jacket" loading="lazy">
+          </figure>
+          <div class="info">
+            <h3 class="product-name">Signature Jacket</h3>
+            <div class="price">NPR 12,000</div>
+            <div class="actions">
+              <button class="btn small quick-view">Quick View</button>
+              <button class="btn small primary add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- New Arrivals (simple slider) -->
+    <section class="section" id="newArrivals">
+      <div class="section-header">
+        <h2>New Arrivals</h2>
+        <div class="slider-controls">
+          <button class="slider-prev" aria-label="Prev">‹</button>
+          <button class="slider-next" aria-label="Next">›</button>
+        </div>
+      </div>
+      <div class="slider" id="newSlider">
+        <div class="slide"><img src="images/new-1.webp" alt=""><div class="slide-caption">Limited Tee — NPR 4,800</div></div>
+        <div class="slide"><img src="images/new-2.webp" alt=""><div class="slide-caption">Premium Sweatshirt — NPR 6,400</div></div>
+        <div class="slide"><img src="images/new-3.webp" alt=""><div class="slide-caption">Puffer Jacket — NPR 15,000</div></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="brand-compact">EYESON</div>
+        <p class="muted">Luxury streetwear · Designed for creators</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul class="socials"><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">TikTok</a></li></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul><li>Delivery All Over Nepal</li><li>Cash on Delivery Available</li><li>Customer Support</li></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <form id="newsletterForm"><input type="email" placeholder="Email address" required><button class="btn primary" type="submit">Join</button></form>
+      </div>
+    </div>
+    <div class="copyright">© 2026 EYESON. All Rights Reserved.</div>
+  </footer>
+
+  <!-- Quick view modal (re-used across pages) -->
+  <div id="quickView" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-media"><img id="qvImage" src="" alt=""></div>
+      <div class="modal-info">
+        <h3 id="qvTitle">Product Title</h3>
+        <div id="qvPrice" class="price">NPR 0</div>
+        <p id="qvDesc" class="muted">Product details</p>
+        <div class="modal-actions">
+          <button class="btn primary add-cart">Add to Cart</button>
+          <button class="btn" id="qvWishlist">♡ Wishlist</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</body>
+</html>

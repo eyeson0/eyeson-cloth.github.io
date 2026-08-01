@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — EYESON</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="preload">
+  <div id="pageLoader" class="loader" aria-hidden="true"><div class="loader-inner"><div class="brand-mark">E</div><div class="loading-line"></div></div></div>
+  <div id="cursor" aria-hidden="true"></div>
+
+  <header class="site-header"><div class="logo-wrap"><a href="index.html"><img src="images/eyeson-logo.webp" alt="EYESON" class="logo"></a></div></header>
+
+  <main class="section" style="max-width:900px;margin:80px auto">
+    <h2>Checkout</h2>
+    <form id="checkoutForm" onsubmit="event.preventDefault(); alert('Order placed (demo)');" style="display:grid;gap:12px">
+      <input type="text" placeholder="Full name" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="City / District" required>
+      <input type="tel" placeholder="Phone" required>
+      <div>
+        <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+        <label style="margin-left:12px"><input type="radio" name="payment" value="online"> Online Payment</label>
+      </div>
+      <button class="btn primary" type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-col"><div class="brand-compact">EYESON</div></div></div><div class="copyright">© 2026 EYESON</div></footer>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</body>
+</html>
