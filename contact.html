@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- after style.css and other CSS -->
+<link rel="stylesheet" href="css/theme.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — EYESON</title>
@@ -13,7 +15,13 @@
   <div id="cursor" aria-hidden="true"></div>
 
   <header class="site-header"><nav class="nav-left"><ul><li><a href="index.html">Home</a></li></ul></nav><div class="logo-wrap"><a href="index.html"><img src="images/eyeson-logo.webp" alt="EYESON" class="logo"></a></div><nav class="nav-right"><ul><li><a href="collections.html">Collections</a></li><li><a href="about.html">About</a></li></ul></nav></header>
-
+<!-- Example: put inside .nav-inner where controls live, near top-right -->
+<button id="themeToggle" class="theme-toggle" aria-label="Theme" aria-haspopup="false" data-mode="system" title="Theme">
+  <!-- JS will replace the innerHTML with SVG + label; initial content is optional -->
+  <svg aria-hidden="true" viewBox="0 0 24 24"></svg>
+  <span class="label">System</span>
+  <span class="sr-only">Theme system</span>
+</button>
   <main id="contactMain" class="section">
     <div class="section-header">
       <h2>Contact / Delivery</h2>
@@ -39,7 +47,7 @@
   </main>
 
   <footer class="site-footer"><div class="footer-inner"><div class="footer-col"><div class="brand-compact">EYESON</div></div><div class="footer-col"><h4>Follow</h4><ul class="socials"><li><a href="#">Instagram</a></li></ul></div></div><div class="copyright">© 2026 EYESON</div></footer>
-
+<script src="js/theme.js" defer></script>
   <script src="js/script.js" defer></script>
 </body>
 </html>
