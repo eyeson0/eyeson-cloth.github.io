@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-  <!-- after style.css and other CSS -->
-<link rel="stylesheet" href="css/theme.css">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -23,6 +21,13 @@
     <nav class="nav-left"><ul><li><a href="index.html">Home</a></li><li><a href="new.html">New</a></li><li class="has-dropdown">Upper Wear</li><li class="has-dropdown">Lower Wear</li></ul></nav>
     <div class="logo-wrap"><a href="index.html"><img src="images/eyeson-logo.webp" alt="EYESON" class="logo"></a></div>
     <nav class="nav-right"><ul><li class="has-dropdown">EYESON Special</li><li><a href="collections.html">Collections</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <!-- Put this inside your .nav-inner (header) near the right-side controls -->
+<button id="themeToggle" class="theme-toggle" aria-label="Theme" aria-haspopup="false" data-mode="system" title="Theme">
+  <!-- JS will replace inner content with SVG icons + label on init -->
+  <svg aria-hidden="true" viewBox="0 0 24 24"></svg>
+  <span class="label">System</span>
+  <span class="sr-only">Theme system</span>
+</button>
   </header>
 
   <main class="section">
@@ -59,7 +64,6 @@
     </div>
     <div class="copyright">© 2026 EYESON. All Rights Reserved.</div>
   </footer>
-
   <script src="js/script.js" defer></script>
 </body>
 </html>
