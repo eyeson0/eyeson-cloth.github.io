@@ -23,6 +23,13 @@
       <div>
         <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
         <label style="margin-left:12px"><input type="radio" name="payment" value="online"> Online Payment</label>
+        <!-- Put this inside your .nav-inner (header) near the right-side controls -->
+<button id="themeToggle" class="theme-toggle" aria-label="Theme" aria-haspopup="false" data-mode="system" title="Theme">
+  <!-- JS will replace inner content with SVG icons + label on init -->
+  <svg aria-hidden="true" viewBox="0 0 24 24"></svg>
+  <span class="label">System</span>
+  <span class="sr-only">Theme system</span>
+</button>
       </div>
       <button class="btn primary" type="submit">Place Order</button>
     </form>
