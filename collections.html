@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+<<!-- after style.css and other CSS -->
+<link rel="stylesheet" href="css/theme.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Collections — EYESON</title>
@@ -28,6 +30,13 @@
         <button class="cat-btn" data-cat="upper">Upper Wear</button>
         <button class="cat-btn" data-cat="lower">Lower Wear</button>
         <button class="cat-btn" data-cat="special">EYESON Special</button>
+        <!-- Example: put inside .nav-inner where controls live, near top-right -->
+<button id="themeToggle" class="theme-toggle" aria-label="Theme" aria-haspopup="false" data-mode="system" title="Theme">
+  <!-- JS will replace the innerHTML with SVG + label; initial content is optional -->
+  <svg aria-hidden="true" viewBox="0 0 24 24"></svg>
+  <span class="label">System</span>
+  <span class="sr-only">Theme system</span>
+</button>
       </div>
     </div>
 
@@ -56,7 +65,7 @@
     <div class="footer-inner"><div class="footer-col"><div class="brand-compact">EYESON</div><p class="muted">Luxury streetwear</p></div><div class="footer-col"><h4>Follow</h4><ul class="socials"><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div><div class="footer-col"><h4>Support</h4><ul><li>Delivery All Over Nepal</li><li>COD Available</li></ul></div><div class="footer-col"><h4>Newsletter</h4><form onsubmit="event.preventDefault(); alert('Subscribed (demo)');"><input type="email" placeholder="Your email" required><button class="btn primary">Join</button></form></div></div>
     <div class="copyright">© 2026 EYESON. All Rights Reserved.</div>
   </footer>
-
+<script src="js/theme.js" defer></script>
   <script src="js/script.js" defer></script>
   <script src="js/slider.js" defer></script>
   <script src="js/cart.js" defer></script>
