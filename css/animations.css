@@ -1,0 +1,8 @@
+/* css/animations.css
+   Small utility animations used sitewide
+*/
+.fade-in{opacity:0;transform:translateY(10px);animation:fadeIn 700ms forwards}
+@keyframes fadeIn{to{opacity:1;transform:none}}
+
+.slide-up{opacity:0;transform:translateY(18px);animation:slideUp 700ms forwards}
+@keyframes slideUp{to{opacity:1;transform:none}}

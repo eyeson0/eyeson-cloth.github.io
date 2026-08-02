@@ -1,0 +1,13 @@
+/* css/responsive.css
+   Additional responsive tweaks
+*/
+@media (max-width:1000px){
+  .brand-title{font-size:56px}
+  .hero-inner{padding:18px}
+}
+@media (max-width:720px){
+  .brand-title{font-size:40px}
+  .hero-inner{padding:14px}
+  .site-header ul{gap:8px}
+  .modal-inner{grid-template-columns:1fr}
+}
