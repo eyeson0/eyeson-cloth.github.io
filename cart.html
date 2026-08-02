@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-  <!-- after style.css and other CSS -->
-<link rel="stylesheet" href="css/theme.css">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -25,6 +23,13 @@
       <div class="muted">Total:</div>
       <div id="cartTotal" class="price">NPR 0</div>
       <a class="btn primary" href="checkout.html">Checkout</a>
+      <!-- Put this inside your .nav-inner (header) near the right-side controls -->
+<button id="themeToggle" class="theme-toggle" aria-label="Theme" aria-haspopup="false" data-mode="system" title="Theme">
+  <!-- JS will replace inner content with SVG icons + label on init -->
+  <svg aria-hidden="true" viewBox="0 0 24 24"></svg>
+  <span class="label">System</span>
+  <span class="sr-only">Theme system</span>
+</button> 
     </div>
   </main>
 
